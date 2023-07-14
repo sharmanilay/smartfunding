@@ -61,7 +61,11 @@ contract SmartFunding {
     }
   }
 
-  function getDonators() {}
+  function getDonators(
+    uint256 _id
+  ) public view returns (address[] memory, uint256[] memory) {
+    return (campaigns[_id].donators, campaigns[_id].donations);
+  }
 
   function getCampaigns() {}
 }
