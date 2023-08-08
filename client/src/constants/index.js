@@ -7,7 +7,7 @@ import {
   withdraw,
 } from '../assets';
 
-export const navlinks = [
+export const navLinks = [
   {
     name: 'dashboard',
     imgUrl: dashboard,
